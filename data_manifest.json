@@ -1,0 +1,47 @@
+{
+  "train(Task_2)/train_data.mat": {
+    "sha256": "ede16ffb18c4d7634855e39c5c2ee0e5880ef9e94ebfb96c32891dc070780dad",
+    "bytes": 614540,
+    "variables": {
+      "train_data": {
+        "shape": [
+          800,
+          361
+        ],
+        "dtype": "float64",
+        "min": 0.0,
+        "max": 1.0
+      }
+    }
+  },
+  "train(Task_2)/train_label.mat": {
+    "sha256": "9d9a0c20fb5fa2a4f4458c002e97360998559ea96b83b868bd470e1bedf0e906",
+    "bytes": 206,
+    "variables": {
+      "train_label": {
+        "shape": [
+          800,
+          1
+        ],
+        "dtype": "int16",
+        "min": -1.0,
+        "max": 1.0
+      }
+    }
+  },
+  "test(Task_2)/test_data.mat": {
+    "sha256": "2bdd5402d37ec87fa231480011541e9d27a05d6b21e6e3356bfee517ad74a095",
+    "bytes": 294130,
+    "variables": {
+      "test_data": {
+        "shape": [
+          420,
+          361
+        ],
+        "dtype": "float64",
+        "min": 0.01568627450980392,
+        "max": 0.996078431372549
+      }
+    }
+  }
+}

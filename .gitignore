@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+# Never publish manually annotated test labels or backups
+**/test_label*
+**/*人工标注*/
+verification_outputs/

@@ -1,0 +1,318 @@
+{
+  "protocol": "Train-only stratified 5-fold selection; no test labels read; augmentation only within each fold; equal per-original total augmentation weight; threshold 0; original/mirror mean decision scores; ties resolved by predefined config order",
+  "seed": 20261110,
+  "augmentation": "original and 4 one-pixel edge-padded translations, each with horizontal mirror; 10 variants",
+  "training_originals": 800,
+  "training_augmented": 8000,
+  "best": {
+    "config": {
+      "C": 1.0,
+      "gamma": 2.0,
+      "face_weight": 1.0
+    },
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cv_mean": 1.0,
+    "cv_std": 0.0
+  },
+  "trials": [
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 0.5,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.9875,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9949999999999999,
+      "cv_std": 0.00467707173346741
+    },
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 0.5,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.9875,
+        0.99375,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.99375,
+      "cv_std": 0.00395284707521046
+    },
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 0.5,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        0.9875,
+        0.9875,
+        0.99375,
+        0.9875,
+        1.0
+      ],
+      "cv_mean": 0.99125,
+      "cv_std": 0.004999999999999982
+    },
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 2.0,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 2.0,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 1.0,
+        "gamma": 2.0,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.99875,
+      "cv_std": 0.0024999999999999914
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 0.5,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.99375,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9962499999999999,
+      "cv_std": 0.003061862178478962
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 0.5,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.9875,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9949999999999999,
+      "cv_std": 0.00467707173346741
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 0.5,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.9875,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9949999999999999,
+      "cv_std": 0.00467707173346741
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 2.0,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 2.0,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 5.0,
+        "gamma": 2.0,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 0.5,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.99375,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9962499999999999,
+      "cv_std": 0.003061862178478962
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 0.5,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.99375,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9962499999999999,
+      "cv_std": 0.003061862178478962
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 0.5,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        0.99375,
+        0.99375,
+        1.0,
+        0.99375,
+        1.0
+      ],
+      "cv_mean": 0.9962499999999999,
+      "cv_std": 0.003061862178478962
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 2.0,
+        "face_weight": 1.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 2.0,
+        "face_weight": 1.5
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    },
+    {
+      "config": {
+        "C": 20.0,
+        "gamma": 2.0,
+        "face_weight": 2.0
+      },
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0
+    }
+  ],
+  "test_prediction_counts": {
+    "face": 82,
+    "nonface": 338
+  },
+  "runtime_seconds": 33.53874969482422
+}

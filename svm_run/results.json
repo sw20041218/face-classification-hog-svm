@@ -1,0 +1,221 @@
+{
+  "protocol": "5-fold stratified CV on original 800 training images; augmentation only within training folds; zero threshold; no test labels read",
+  "best": {
+    "config": {
+      "mode": "hog_1.0",
+      "C": 1.0,
+      "gamma": 0.5,
+      "important_weight": 1.0,
+      "positive_weight": 1.0,
+      "augment": true
+    },
+    "cv_accuracy": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "trials": [
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 1.0,
+        "gamma": 0.5,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 1.0,
+        "gamma": 2.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 1.0,
+        "gamma": 8.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 0.8474999999999999,
+      "cv_std": 0.015103807466993227,
+      "fold_accuracy": [
+        0.8625,
+        0.81875,
+        0.85625,
+        0.85,
+        0.85
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 5.0,
+        "gamma": 0.5,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 5.0,
+        "gamma": 2.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 5.0,
+        "gamma": 8.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 0.95875,
+      "cv_std": 0.017940875118009136,
+      "fold_accuracy": [
+        0.98125,
+        0.93125,
+        0.975,
+        0.95,
+        0.95625
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 20.0,
+        "gamma": 0.5,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 20.0,
+        "gamma": 2.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 1.0,
+      "cv_std": 0.0,
+      "fold_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "config": {
+        "mode": "hog_1.0",
+        "C": 20.0,
+        "gamma": 8.0,
+        "important_weight": 1.0,
+        "positive_weight": 1.0,
+        "augment": true
+      },
+      "cv_accuracy": 0.95875,
+      "cv_std": 0.017940875118009136,
+      "fold_accuracy": [
+        0.98125,
+        0.93125,
+        0.975,
+        0.95,
+        0.95625
+      ]
+    }
+  ],
+  "oof_metrics": {
+    "n": 800,
+    "correct": 800,
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_face": 1.0,
+    "confusion_labels": [
+      -1,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        400,
+        0
+      ],
+      [
+        0,
+        400
+      ]
+    ]
+  },
+  "test_counts": {
+    "face": 69,
+    "non_face": 351
+  },
+  "selection_note": "CV used for hyperparameter selection; not an independent unbiased estimate"
+}
