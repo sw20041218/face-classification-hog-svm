@@ -1,0 +1,614 @@
+[
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.002499999999999991,
+    "fold_accuracy": [
+      0.99375,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.002499999999999991,
+    "fold_accuracy": [
+      0.99375,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.002499999999999991,
+    "fold_accuracy": [
+      1.0,
+      0.99375,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.002499999999999991,
+    "fold_accuracy": [
+      0.99375,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "A",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9962499999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9962499999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9962499999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      1.0,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9949999999999999,
+    "cv_std": 0.00467707173346741,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.9875,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99375,
+    "cv_std": 0.006846531968814592,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.98125,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "B",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.002499999999999991,
+    "fold_accuracy": [
+      0.99375,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9949999999999999,
+    "cv_std": 0.00467707173346741,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.9875,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 0.5,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.99875,
+    "cv_std": 0.0024999999999999914,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 1.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9974999999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      1.0,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 5.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 0.5
+    },
+    "cv_mean": 0.9962499999999999,
+    "cv_std": 0.003061862178478962,
+    "fold_accuracy": [
+      0.99375,
+      0.99375,
+      1.0,
+      0.99375,
+      1.0
+    ]
+  },
+  {
+    "config": {
+      "mode": "C",
+      "extra_weight": 1.0,
+      "C": 20.0,
+      "gamma": 2.0
+    },
+    "cv_mean": 1.0,
+    "cv_std": 0.0,
+    "fold_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+]
