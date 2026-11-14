@@ -1,0 +1,29 @@
+{
+  "correct": 403,
+  "n": 420,
+  "local_development_acc": 0.9595238095238096,
+  "confusion_labels": [
+    -1,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      301,
+      1
+    ],
+    [
+      16,
+      102
+    ]
+  ],
+  "predicted_face": 103,
+  "predicted_nonface": 317,
+  "txt_sha256": "b07bed20c4c07e936e90a88ef2a63cf87bebf79bba60e870ab3075a53c51a234",
+  "pretrained_weights": "C:\\Users\\HP\\.cache\\torch\\hub\\checkpoints\\resnet18-f37072fd.pth",
+  "platform_acc": null,
+  "historical_verification_note": "Original verification predates the current result_transfer.txt. Its recorded text hash does not match the current file.",
+  "current_text_sha256": "47d706f46e83e34d6a9b42033cacde6b7ca7f35b999c84ed57f8952eaee8e6ec",
+  "current_text_differs_from_saved_model_rows": 2,
+  "current_text_reproduced_by_saved_model": false,
+  "historical_saved_model_reproduces_scores_and_labels": true
+}

@@ -1,0 +1,6 @@
+{
+  "platform_acc": 0.95,
+  "source": "Existing experiment report records user-reported platform ACC 0.950; not independently verified",
+  "submission_file": "result_transfer.txt",
+  "limitation": "Current result_transfer.txt differs from saved-model output in 2 rows; which version was submitted for ACC 0.950 is unconfirmed."
+}
