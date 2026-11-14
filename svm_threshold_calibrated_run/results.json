@@ -1,0 +1,117 @@
+{
+  "method": "Original contrast+HOG mirror/translation-trained single RBF-SVM, two-view inference, local development-set threshold calibration",
+  "model_config": {
+    "C": 1.0,
+    "gamma": 2.0,
+    "face_weight": 1.0
+  },
+  "model_source": "D:\\Pattern Recognition\\\u7b2c\u56db\u6b21\u5927\u4f5c\u4e1a\\\u5927\u4f5c\u4e1a4 to student\\svm_shift_run\\model.joblib",
+  "model_sha256": "c0fc15da95ffc2707a6945b7d68a8e67ec9de6453c7bc5c316f8610f0454b624",
+  "manual_label_sha256": "4926f0c003fda9b9bae38f1973f1163a06d0b45b689b6160952f7127ad8a0054",
+  "best": {
+    "threshold": -0.5,
+    "correct": 392,
+    "acc": 0.9333333333333333,
+    "FP": 11,
+    "FN": 17
+  },
+  "trials": [
+    {
+      "threshold": 0.0,
+      "correct": 382,
+      "acc": 0.9095238095238095,
+      "FP": 1,
+      "FN": 37
+    },
+    {
+      "threshold": -0.05,
+      "correct": 385,
+      "acc": 0.9166666666666666,
+      "FP": 1,
+      "FN": 34
+    },
+    {
+      "threshold": -0.1,
+      "correct": 385,
+      "acc": 0.9166666666666666,
+      "FP": 1,
+      "FN": 34
+    },
+    {
+      "threshold": -0.15,
+      "correct": 388,
+      "acc": 0.9238095238095239,
+      "FP": 1,
+      "FN": 31
+    },
+    {
+      "threshold": -0.2,
+      "correct": 388,
+      "acc": 0.9238095238095239,
+      "FP": 3,
+      "FN": 29
+    },
+    {
+      "threshold": -0.25,
+      "correct": 390,
+      "acc": 0.9285714285714286,
+      "FP": 4,
+      "FN": 26
+    },
+    {
+      "threshold": -0.3,
+      "correct": 391,
+      "acc": 0.930952380952381,
+      "FP": 5,
+      "FN": 24
+    },
+    {
+      "threshold": -0.4,
+      "correct": 391,
+      "acc": 0.930952380952381,
+      "FP": 8,
+      "FN": 21
+    },
+    {
+      "threshold": -0.5,
+      "correct": 392,
+      "acc": 0.9333333333333333,
+      "FP": 11,
+      "FN": 17
+    },
+    {
+      "threshold": -0.6,
+      "correct": 387,
+      "acc": 0.9214285714285714,
+      "FP": 16,
+      "FN": 17
+    },
+    {
+      "threshold": -0.8,
+      "correct": 358,
+      "acc": 0.8523809523809524,
+      "FP": 50,
+      "FN": 12
+    }
+  ],
+  "confusion_labels": [
+    -1,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      291,
+      11
+    ],
+    [
+      17,
+      101
+    ]
+  ],
+  "prediction_counts": {
+    "face": 112,
+    "nonface": 308
+  },
+  "platform_acc": null,
+  "limitation": "Local labels explicitly used to tune threshold; reported ACC is development-set performance, not unbiased evaluation; no platform submission made"
+}

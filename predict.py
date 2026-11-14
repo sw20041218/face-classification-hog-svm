@@ -8,14 +8,15 @@ import numpy as np
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale', 'multiview'], default='shift')
+    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale', 'multiview', 'threshold'], default='shift')
     parser.add_argument('--input', type=Path)
     parser.add_argument('--output', type=Path, default=Path('prediction.txt'))
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     folder = root / {'baseline': 'svm_run', 'shift': 'svm_shift_run',
                      'multiscale': 'svm_local_multiscale_run',
-                     'multiview': 'svm_shift_run'}[args.experiment]
+                     'multiview': 'svm_shift_run',
+                     'threshold': 'svm_threshold_calibrated_run'}[args.experiment]
     sys.path.insert(0, str(folder))
     from face_model import load_data, features, flip
     x, _ = load_data(args.input or root / 'test(Task_2)' / 'test_data.mat')
@@ -24,7 +25,7 @@ def main():
         scores = model.decision_function(x)
         threshold = 0.
     else:
-        model = joblib.load(folder / 'model.joblib')
+        model = joblib.load(folder / ('model_calibrated.joblib' if args.experiment == 'threshold' else 'model.joblib'))
         if args.experiment == 'multiscale':
             from model_features import transform
             cfg = model['config']

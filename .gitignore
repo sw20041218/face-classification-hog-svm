@@ -9,3 +9,6 @@ Thumbs.db
 **/test_label*
 **/*人工标注*/
 verification_outputs/
+
+# Private calibration artifacts are not published
+**/scores_and_predictions.npz
