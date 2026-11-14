@@ -1,4 +1,4 @@
-"""Run either saved classifier without training or test annotations."""
+"""Run a saved classifier without training or test annotations."""
 import argparse
 from pathlib import Path
 import sys
@@ -8,13 +8,14 @@ import numpy as np
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale'], default='shift')
+    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale', 'multiview'], default='shift')
     parser.add_argument('--input', type=Path)
     parser.add_argument('--output', type=Path, default=Path('prediction.txt'))
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     folder = root / {'baseline': 'svm_run', 'shift': 'svm_shift_run',
-                     'multiscale': 'svm_local_multiscale_run'}[args.experiment]
+                     'multiscale': 'svm_local_multiscale_run',
+                     'multiview': 'svm_shift_run'}[args.experiment]
     sys.path.insert(0, str(folder))
     from face_model import load_data, features, flip
     x, _ = load_data(args.input or root / 'test(Task_2)' / 'test_data.mat')
@@ -31,7 +32,16 @@ def main():
         else:
             feature_fn = lambda a: features(a, model['mode'])
         scores = model['svc'].decision_function(feature_fn(x))
-        if model['mirror_tta']:
+        if args.experiment == 'multiview':
+            im = x.reshape(-1, 19, 19).transpose(0, 2, 1)
+            padded = np.pad(im, ((0, 0), (1, 1), (1, 1)), mode='edge')
+            view_scores = []
+            for dy, dx in [(0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)]:
+                shifted = padded[:, 1-dy:20-dy, 1-dx:20-dx].transpose(0, 2, 1).reshape(-1, 361)
+                for view in (shifted, flip(shifted)):
+                    view_scores.append(model['svc'].decision_function(feature_fn(view)))
+            scores = np.mean(view_scores, axis=0)
+        elif model['mirror_tta']:
             scores = (scores + model['svc'].decision_function(feature_fn(flip(x)))) / 2
         threshold = model['threshold']
     pred = np.where(scores > threshold, 1, -1)

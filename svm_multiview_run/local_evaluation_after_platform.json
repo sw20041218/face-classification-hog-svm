@@ -1,0 +1,25 @@
+{
+  "correct": 380,
+  "total": 420,
+  "local_acc": 0.9047619047619048,
+  "platform_acc": 0.9,
+  "gap_percentage_points": 0.4761904761904745,
+  "confusion_labels": [
+    -1,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      302,
+      0
+    ],
+    [
+      40,
+      78
+    ]
+  ],
+  "label_counts": {
+    "-1": 302,
+    "1": 118
+  }
+}

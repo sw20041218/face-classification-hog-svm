@@ -1,0 +1,51 @@
+{
+  "protocol": "Fixed prior C=1 gamma=2; 5-fold training-only validation; ten augmentation views grouped by original; no test labels read; mean of ten view decision scores; threshold 0; no model ensemble",
+  "folds": [
+    {
+      "fold": 1,
+      "n": 160,
+      "multiview_acc": 1.0,
+      "original_mirror_acc": 1.0
+    },
+    {
+      "fold": 2,
+      "n": 160,
+      "multiview_acc": 0.99375,
+      "original_mirror_acc": 1.0
+    },
+    {
+      "fold": 3,
+      "n": 160,
+      "multiview_acc": 1.0,
+      "original_mirror_acc": 1.0
+    },
+    {
+      "fold": 4,
+      "n": 160,
+      "multiview_acc": 1.0,
+      "original_mirror_acc": 1.0
+    },
+    {
+      "fold": 5,
+      "n": 160,
+      "multiview_acc": 1.0,
+      "original_mirror_acc": 1.0
+    }
+  ],
+  "cv_mean": 0.99875,
+  "cv_std": 0.002499999999999991,
+  "model_source": "D:\\Pattern Recognition\\\u7b2c\u56db\u6b21\u5927\u4f5c\u4e1a\\\u5927\u4f5c\u4e1a4 to student\\svm_shift_run\\model.joblib",
+  "model_sha256": "c0fc15da95ffc2707a6945b7d68a8e67ec9de6453c7bc5c316f8610f0454b624",
+  "prediction_counts": {
+    "face": 78,
+    "nonface": 342
+  },
+  "changed_vs_0910": 4,
+  "changed_ids": [
+    9,
+    20,
+    216,
+    329
+  ],
+  "runtime_seconds": 73.67332935333252
+}
