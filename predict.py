@@ -8,7 +8,7 @@ import numpy as np
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale', 'multiview', 'threshold'], default='shift')
+    parser.add_argument('--experiment', choices=['baseline', 'shift', 'multiscale', 'multiview', 'threshold', 'target095'], default='shift')
     parser.add_argument('--input', type=Path)
     parser.add_argument('--output', type=Path, default=Path('prediction.txt'))
     args = parser.parse_args()
@@ -16,7 +16,8 @@ def main():
     folder = root / {'baseline': 'svm_run', 'shift': 'svm_shift_run',
                      'multiscale': 'svm_local_multiscale_run',
                      'multiview': 'svm_shift_run',
-                     'threshold': 'svm_threshold_calibrated_run'}[args.experiment]
+                     'threshold': 'svm_threshold_calibrated_run',
+                     'target095': 'svm_target095_run'}[args.experiment]
     sys.path.insert(0, str(folder))
     from face_model import load_data, features, flip
     x, _ = load_data(args.input or root / 'test(Task_2)' / 'test_data.mat')
