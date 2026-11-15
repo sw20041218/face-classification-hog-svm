@@ -1,0 +1,34 @@
+{
+  "correct": 409,
+  "acc": 0.9738095238095238,
+  "threshold": -1.7275275917910138,
+  "members": [
+    {
+      "source": "resnet50_96_160",
+      "weight": 4.0,
+      "gamma": 0.1,
+      "C": 100.0,
+      "inference": "mirror_mean",
+      "correct": 390,
+      "threshold": -1.0063597550812373
+    },
+    {
+      "source": "resnet18_160",
+      "weight": 0.5,
+      "gamma": 2.0,
+      "C": 1.0,
+      "inference": "mirror_mean",
+      "threshold": -0.7496835192509944,
+      "correct": 399,
+      "acc": 0.95
+    }
+  ],
+  "weights": [
+    0.4,
+    0.6
+  ],
+  "score_std": [
+    0.6854236832944562,
+    0.4791899847590415
+  ]
+}

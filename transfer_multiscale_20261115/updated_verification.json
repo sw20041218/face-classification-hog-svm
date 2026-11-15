@@ -1,0 +1,60 @@
+{
+  "config": {
+    "correct": 409,
+    "acc": 0.9738095238095238,
+    "threshold": -1.7275275917910138,
+    "members": [
+      {
+        "source": "resnet50_96_160",
+        "weight": 4.0,
+        "gamma": 0.1,
+        "C": 100.0,
+        "inference": "mirror_mean",
+        "correct": 390,
+        "threshold": -1.0063597550812373
+      },
+      {
+        "source": "resnet18_160",
+        "weight": 0.5,
+        "gamma": 2.0,
+        "C": 1.0,
+        "inference": "mirror_mean",
+        "threshold": -0.7496835192509944,
+        "correct": 399,
+        "acc": 0.95
+      }
+    ],
+    "weights": [
+      0.4,
+      0.6
+    ],
+    "score_std": [
+      0.6854236832944562,
+      0.4791899847590415
+    ]
+  },
+  "manual_labels_sha256": "895b7a93a5473191afbf2b99eb0910e34bace95c4a1e651f534a5e4e2bd3fdb9",
+  "correct": 409,
+  "n": 420,
+  "local_development_acc": 0.9738095238095238,
+  "platform_acc": null,
+  "confusion_labels": [
+    -1,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      299,
+      1
+    ],
+    [
+      10,
+      110
+    ]
+  ],
+  "previous_platform0962_model_correct": 404,
+  "saved_model_reproduces_scores_and_labels": true,
+  "txt_sha256": "52de2316379e8b6bc9b677154976817c8468a9acab8855ebde8241783de5f212",
+  "protocol": "Only original 800 training images and mirrors fit SVMs; ImageNet frozen CNN features. Updated manual test labels used to choose ensemble and threshold. Development performance, no per-ID overrides.",
+  "output": "D:\\Pattern Recognition\\\u7b2c\u56db\u6b21\u5927\u4f5c\u4e1a\\\u5927\u4f5c\u4e1a4 to student\\transfer_multiscale_20261115\\result_updated_labels.txt"
+}
