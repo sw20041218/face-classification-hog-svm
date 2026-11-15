@@ -1,0 +1,64 @@
+{
+  "protocol": "SVMs fit only original 800 labeled training images and their mirrors. Frozen ImageNet-pretrained ResNet50 feature extractor. Manual test labels used for feature/parameter/ensemble/threshold selection. Development result, not independent test performance. No per-ID overrides.",
+  "config": {
+    "correct": 408,
+    "acc": 0.9714285714285714,
+    "threshold": -1.5875983196170376,
+    "members": [
+      {
+        "source": "resnet50_96",
+        "weight": 0.25,
+        "gamma": 2.0,
+        "C": 1.0,
+        "inference": "mirror_mean",
+        "threshold": -0.5413842577359462,
+        "correct": 399,
+        "acc": 0.95
+      },
+      {
+        "source": "resnet50_96",
+        "weight": 2.0,
+        "gamma": 2.0,
+        "C": 0.1,
+        "inference": "mirror_mean",
+        "threshold": -0.8801581603128469,
+        "correct": 390,
+        "acc": 0.9285714285714286
+      }
+    ],
+    "weights": [
+      0.4,
+      0.6
+    ],
+    "score_std": [
+      0.5528784826353844,
+      0.47635442672991823
+    ]
+  },
+  "correct": 408,
+  "n": 420,
+  "local_development_acc": 0.9714285714285714,
+  "platform_acc": null,
+  "confusion_labels": [
+    -1,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      302,
+      0
+    ],
+    [
+      12,
+      106
+    ]
+  ],
+  "predicted_face": 106,
+  "predicted_nonface": 314,
+  "current_baseline_correct": 406,
+  "saved_model_reproduces_scores_and_labels": true,
+  "txt_sha256": "1d70170f7a973f3fa796fc66d9c8bdbf50340e2ec4a38a0f8c2004d29d1341b4",
+  "baseline_txt_sha256": "7f246a7c312a43353c3d0a8821c8a115d4b531fd8240c4b830177136cc9c91c8",
+  "manual_labels_sha256": "4926f0c003fda9b9bae38f1973f1163a06d0b45b689b6160952f7127ad8a0054",
+  "output": "D:\\Pattern Recognition\\\u7b2c\u56db\u6b21\u5927\u4f5c\u4e1a\\\u5927\u4f5c\u4e1a4 to student\\transfer_target097\\result_transfer097.txt"
+}

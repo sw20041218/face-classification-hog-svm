@@ -1,0 +1,10 @@
+{
+  "source": "resnet50_96",
+  "weight": 0.5,
+  "gamma": 0.1,
+  "C": 1.0,
+  "inference": "mirror_mean",
+  "threshold": -0.7034319815966057,
+  "correct": 405,
+  "acc": 0.9642857142857143
+}
